@@ -6,6 +6,13 @@
      transition: transform 0.9s ease; /* ease : rendu plus agréable "naturel" pour ne pas gradir d'un coup */
 }
 
+.point {
+    font-family: "Yeseva One", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #10cf94;
+}
+
 .fa-brands:hover {
     transform: scale(1.30);/* echelle d'agrandissement 1.0 = 100% de la taille 1.30 = 130%*/
 }
