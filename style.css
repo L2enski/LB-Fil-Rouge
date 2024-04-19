@@ -6,7 +6,7 @@
     transition: transform 0.9s ease;
 }
 
-.social-icons:hover {
+.fa-brands:hover {
     transform: scale(1.30);
 }
 
@@ -54,12 +54,18 @@ nav {
 
 nav li {
     display: inline-block;
-    padding: 10px 8px;
+    padding: 10px 20px;
     transition: transform 1.2s ease;
 }
 
 .cat li:hover {
     transform: scale(1.10);
+    background-color: #10cf94; 
+    color: white; 
+    padding: 4px 12px; 
+}
+
+.nature {
     background-color: #10cf94; 
     color: white; 
     padding: 4px 12px; 
