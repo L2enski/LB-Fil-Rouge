@@ -108,11 +108,18 @@ nav li {
 }
 nav li {
         display: inline-block; 
-        padding: 2px 2px; 
-        font-size: 70%; 
+        padding: 2px 2px;      
 }
 nav {
     padding: 0px 10px; 
+    font-size: 70%; 
+    margin-left: -10%;
+}
+h3 {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 6%;
+    margin-right: 30%;
+    font-size: 60%; 
 }
 }
 
