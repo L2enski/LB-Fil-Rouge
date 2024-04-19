@@ -1,9 +1,16 @@
 .social-icons  {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     color: #ffffff;
-     transition: transform 0.9s ease; /* ease : rendu plus agréable "naturel" pour ne pas gradir d'un coup */
+    transition: transform 0.9s ease; /* ease : rendu plus agréable "naturel" pour ne pas gradir d'un coup */
+    padding: 4px 12px; 
+} 
+.social-icons a {
+    padding: 0px 4px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .point {
@@ -46,6 +53,7 @@ h2 {
 h3 {
     font-family: "Montserrat", sans-serif;
     margin-left: 7%;
+    margin-right: 40%;
     font-weight: 400;
     color: rgb(90, 90, 90);
 }
@@ -121,11 +129,26 @@ h3 {
     margin-right: 30%;
     font-size: 60%; 
 }
+    .allimages img:nth-child(n+10):nth-child(-n+16) { /* Desactiver Image 10 a 16*/
+    display: none;
+}
+.note {
+    display: none;
+}
+header{
+    flex-direction: column;
+}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) { /* 769px min et 1024px max ( Ecrans entre 769 et 1024px : tablettes )*/
     .allimages {
         grid-template-columns: repeat(5, 1fr); /* 5 colonnes et 1 fragement de l'espace (pour proportion egales)*/
+}
+    .allimages img:nth-child(16) { /* Desactiver Image 16 */
+        display: none;
+}
+.note {
+    display: none;
 }
 }
 
