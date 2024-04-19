@@ -3,11 +3,11 @@
     top: 20px;
     right: 20px;
     color: #ffffff;
-    transition: transform 0.9s ease;
+     transition: transform 0.9s ease; /* ease : rendu plus agréable "naturel" pour ne pas gradir d'un coup */
 }
 
 .fa-brands:hover {
-    transform: scale(1.30);
+    transform: scale(1.30);/* echelle d'agrandissement 1.0 = 100% de la taille 1.30 = 130%*/
 }
 
 h1  {
@@ -42,7 +42,7 @@ h3 {
 
 a {
     color: inherit;
-    text-decoration: inherit;
+    text-decoration: inherit; /* inherit : garde la couleur definie (empeche la couleur violette des liens)*/
 }
 
 nav {
@@ -53,8 +53,8 @@ nav {
 }
 
 nav li {
-    display: inline-block;
-    padding: 10px 20px;
+    display: inline-block; /* permet de mettre en ligne tout en gardant des "propriétées" de bloc*/
+    padding: 10px 20px; /* 10px = en haut et en bas 20px = a gauche et a droite*/
     transition: transform 1.2s ease;
 }
 
@@ -74,10 +74,10 @@ nav li {
 .allimages {
     margin-left: 6%;
     margin-right: 6%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); 
-    grid-gap: 10px; 
-    margin: 0 6%; 
+    display: grid; /* definis une "grille"/ place les éléments en grille */
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); /* auto fit = ajustement automatique + taille minimum 20% de la grille 1fr peut s'etendre pour remplir l'espace dipso*/
+    grid-gap: 10px; /* espaces entres les elements de la grille */
+    margin: 0 6%; /* marge de 0 en haut et en bas et 6% a droite et a gauche */
 }
 
 .allimages img {
@@ -92,15 +92,15 @@ nav li {
     transform: scale(0.90);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /* maximum de 768px ( correspond au telephones ) */
     .allimages {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes et 1 fragement de l'espace (pour proportion egales)*/
 }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* 769px min et 1024px max ( Ecrans entre 769 et 1024px : tablettes )*/
     .allimages {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr); /* 5 colonnes et 1 fragement de l'espace (pour proportion egales)*/
 }
 }
 
